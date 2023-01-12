@@ -122,14 +122,14 @@
   background-color: var(--orange);
 }
 
-.btn:hover {
+.btn:active {
   transform: scale(1.025);
   /* color: var(--black); */
   /* border-color: var(--black); */
   background-color: var(--dark-grey-hover);
 }
 
-.orange:hover {
+.orange:active {
   background-color: var(--orange-hover);
 }
 
