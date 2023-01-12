@@ -1,4 +1,5 @@
 function Buttons(props) {
+  /* TODO split the structure, use arrays to store buttons */
   return (
     <div id='buttons'>
       <button
