@@ -9,7 +9,7 @@ function Calculator(props) {
   const [dotUsed, setDotUsed] = useState(false);
 
   function handleOperation(e) {
-    /* TODO make only minus at start*/
+    /* TODO make only one minus at start */
     if (input.length === 0 && ["*", "/", "+"].includes(e.target.value)) return;
     if (
       ["*", "/", "+", "-"].includes(input.at(-1)) &&
@@ -20,6 +20,7 @@ function Calculator(props) {
       );
     }
     setDotUsed(state => false);
+    setZeroAtStart(state => false);
     if (["*", "/", "+", "-"].includes(input.at(-1))) {
       if (e.target.value === "-") {
         setInput(input => input + e.target.value);
